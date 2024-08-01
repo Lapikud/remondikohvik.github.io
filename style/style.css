@@ -1,0 +1,106 @@
+body {
+	background-color: #28242C;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: 'Radley';font-size: 22px;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+.bullets {
+	position: fixed;
+    height: 100px;
+    display: flex;
+    left: 1vh;
+    transform: scale(1.5);
+    flex-direction: column;
+    justify-content: space-evenly;
+    top: 50vh;
+    z-index: 9999;
+}
+.bullets a {
+    transition: color 0.3s;
+}
+.bullet {
+  width: 10px;
+  height: 10px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.bullet.active {
+  color: white; /* Set the active bullet color */
+}
+#carusel {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+.Leht_0 {
+	display: flex;
+	height: 100vh;
+}
+.Lehed {
+	position: absolute;
+	width: 34%;
+	height: auto;
+
+}
+#R01{
+	right: 0;
+	top: 0;
+}
+
+.section{
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: transform 0.5s ease;
+}
+#info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align-last: center;
+	position: relative;
+	top: 2em;
+}
+#rk_logo {
+	width: 30%;
+	height: auto;
+}
+
+
+@media screen and (max-width: 600px) {
+	#info {
+		position: relative;
+		top: 6em;
+	}
+	#rk_logo {
+		width: 50%;
+	}
+	.bullets {
+		transform: scale(1);
+	}
+	.Lehed {
+		width: 45%;
+	}
+}
+@media screen and (min-width: 1090px) {
+	.Lehed {
+		width: 25%;
+	}
+	#rk_logo {
+		width: 25%;
+	}
+}
