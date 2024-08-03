@@ -35,8 +35,9 @@ body {
   cursor: pointer;
 }
 
-.bullet.active {
-  color: white; /* Set the active bullet color */
+.highlight {
+	border-color: #FFA50C;
+	background: linear-gradient(to bottom, #8819199e 0%, #ffa50c 100%);
 }
 #carusel {
 	display: flex;
@@ -73,29 +74,71 @@ body {
 	align-items: center;
 	text-align-last: center;
 	position: relative;
-	top: 2em;
+	top: 4em;
 }
 #rk_logo {
 	width: 30%;
 	height: auto;
 }
 
+#RK_txt {
+	font-weight: normal;
+	color: #FFA50C;
+	font-size: 9vh;
+}
 
+.cal_maps_icons {
+	height: 15vh;
+	width: auto;
+}
+#cal_maps, .CMinfo {
+	display: flex;
+	align-items: center;
+	color: #b88d61;
+	justify-content: center;
+	font-size: large;
+}
+
+@media screen and (max-width: 400px) {
+	#RK_txt {
+		font-size: 5vh;
+	}
+}
+@media screen and (min-width: 400px) {
+	#RK_txt {
+		font-size: 7vh;
+	}
+}
 @media screen and (max-width: 600px) {
 	#info {
 		position: relative;
 		top: 6em;
 	}
+
 	#rk_logo {
 		width: 50%;
 	}
 	.bullets {
 		transform: scale(1);
 	}
+
 	.Lehed {
 		width: 45%;
 	}
 }
+
+@media screen and (max-width: 800px) {
+	#cal_maps {
+		flex-direction: column;
+	}
+
+	.CMinfo {
+		flex-direction: column;
+	}
+
+
+}
+
 @media screen and (min-width: 1090px) {
 	.Lehed {
 		width: 25%;
