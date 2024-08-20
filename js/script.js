@@ -14,8 +14,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-
-//new size new div under 600 px for calender and maps
+// New size new div under 600 px for calendar and maps
 
 window.addEventListener('resize', function () {
     if (window.innerWidth <= 600) {

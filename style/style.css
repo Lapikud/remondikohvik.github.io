@@ -1,18 +1,19 @@
 body {
-	background-color: #28242C;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	scroll-behavior: smooth;
-	font-family: 'Radley';font-size: 22px;
+    background-color: #28242C;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Radley', serif;
+    font-size: 22px;
 }
 
 *::-webkit-scrollbar {
-  width: 0;
+    width: 0;
 }
 
 .bullets {
-	position: fixed;
+    position: fixed;
     height: 100px;
     display: flex;
     left: 1vh;
@@ -22,128 +23,141 @@ body {
     top: 50vh;
     z-index: 9999;
 }
+
 .bullets a {
     transition: color 0.3s;
 }
+
 .bullet {
-  width: 10px;
-  height: 10px;
-  border-style: solid;
-  border-color: white;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
+    width: 10px;
+    height: 10px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
 }
 
 .highlight {
-	border-color: #FFA50C;
-	background: linear-gradient(to bottom, #8819199e 0%, #ffa50c 100%);
-}
-#carusel {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	height: 100%;
-}
-.Leht_0 {
-	display: flex;
-	height: 100vh;
-}
-.Lehed {
-	position: absolute;
-	width: 34%;
-	height: auto;
-
-}
-#R01{
-	right: 0;
-	top: 0;
+    border-color: #FFA50C;
+    background: linear-gradient(to bottom, #8819199e 0%, #ffa50c 100%);
 }
 
-.section{
-	width: 100%;
-	height: 100vh;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	transition: transform 0.5s ease;
+#carousel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
+
+.page_0 {
+    display: flex;
+    height: 100vh;
+}
+
+.pages {
+    position: absolute;
+    width: 34%;
+    height: auto;
+
+}
+
+#r01 {
+    right: 0;
+    top: 0;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: transform 0.5s ease;
+}
+
 #info {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align-last: center;
-	position: relative;
-	top: 4em;
-}
-#rk_logo {
-	width: 30%;
-	height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align-last: center;
+    position: relative;
+    top: 4em;
 }
 
-#RK_txt {
-	font-weight: normal;
-	color: #FFA50C;
-	font-size: 9vh;
+#rk_logo {
+    width: 30%;
+    height: auto;
+}
+
+#rk_txt {
+    font-weight: normal;
+    color: #FFA50C;
+    font-size: 9vh;
 }
 
 .cal_maps_icons {
-	height: 15vh;
-	width: auto;
+    height: 15vh;
+    width: auto;
 }
-#cal_maps, .CMinfo {
-	display: flex;
-	align-items: center;
-	color: #b88d61;
-	justify-content: center;
-	font-size: large;
+
+#cal_maps, .cmInfo {
+    display: flex;
+    align-items: center;
+    color: #b88d61;
+    justify-content: center;
+    font-size: large;
 }
 
 @media screen and (max-width: 400px) {
-	#RK_txt {
-		font-size: 5vh;
-	}
+    #rk_txt {
+        font-size: 5vh;
+    }
 }
+
 @media screen and (min-width: 400px) {
-	#RK_txt {
-		font-size: 7vh;
-	}
+    #rk_txt {
+        font-size: 7vh;
+    }
 }
+
 @media screen and (max-width: 600px) {
-	#info {
-		position: relative;
-		top: 6em;
-	}
+    #info {
+        position: relative;
+        top: 6em;
+    }
 
-	#rk_logo {
-		width: 50%;
-	}
-	.bullets {
-		transform: scale(1);
-	}
+    #rk_logo {
+        width: 50%;
+    }
 
-	.Lehed {
-		width: 45%;
-	}
+    .bullets {
+        transform: scale(1);
+    }
+
+    .pages {
+        width: 45%;
+    }
 }
 
 @media screen and (max-width: 800px) {
-	#cal_maps {
-		flex-direction: column;
-	}
+    #cal_maps {
+        flex-direction: column;
+    }
 
-	.CMinfo {
-		flex-direction: column;
-	}
+    .cmInfo {
+        flex-direction: column;
+    }
 
 
 }
 
 @media screen and (min-width: 1090px) {
-	.Lehed {
-		width: 25%;
-	}
-	#rk_logo {
-		width: 25%;
-	}
+    .pages {
+        width: 25%;
+    }
+
+    #rk_logo {
+        width: 25%;
+    }
 }
