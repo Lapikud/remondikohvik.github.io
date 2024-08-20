@@ -1,8 +1,8 @@
 # remondikohvik.github.io
 
-slaidide üleminek töötab. Lisada värvide üleminekut scrollimisel. vajutamise värvid muutuvad.
+slaidide Ã¼leminek tÃ¶Ã¶tab. Lisada vÃ¤rvide Ã¼leminekut scrollimisel. vajutamise vÃ¤rvid muutuvad.
 
-Kõik slaidid on lisatud.
+KÃµik slaidid on lisatud.
 
 leht 0 on valmis.
 
